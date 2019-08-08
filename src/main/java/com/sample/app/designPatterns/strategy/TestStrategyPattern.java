@@ -1,6 +1,6 @@
 package com.sample.app.designPatterns.strategy;
 
-public class ExampleTestStrategy {
+public class TestStrategyPattern {
     public static void main(String args[]) {
 
         FileReader fileReader = new FileReader();
@@ -11,7 +11,7 @@ public class ExampleTestStrategy {
         fileReader.setReadStrategy(new XlsReadStrategy());
         fileReader.read();
 
-        fileReader.setReadStrategy(new TextReadStrategy());
+        fileReader.setReadStrategy(new TxtReadStrategy());
         fileReader.read();
     }
 }
